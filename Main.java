@@ -34,5 +34,12 @@ public class Main {
     int x = 5;
     int y = 6;
     System.out.println(x + y); // Print the value of x + y
+
+    int j = 5, k = 6, l = 50;
+    System.out.println(j + k + l);
+
+    int a, b, c;
+    a = b = c = 50;
+    System.out.println(a + b + c);
   }
 }
