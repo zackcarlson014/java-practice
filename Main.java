@@ -41,5 +41,20 @@ public class Main {
     int a, b, c;
     a = b = c = 50;
     System.out.println(a + b + c);
+
+    byte myByte = 100;
+    System.out.println(myByte);
+
+    short myShort = 5000;
+    System.out.println(myShort);
+
+    int myInt = 100000;
+    System.out.println(myInt);
+
+    long myLong = 15000000000L;
+    System.out.println(myLong);
+
+    double myDouble = 19.99d;
+    System.out.println(myDouble);
   }
 }
