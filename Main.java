@@ -90,5 +90,23 @@ public class Main {
 
     System.out.println(myNarrowingDouble);   // Outputs 9.78
     System.out.println(myNarrowingInt);      // Outputs 9
+
+    int sum1 = 100 + 50;        // 150 (100 + 50)
+    int sum2 = sum1 + 250;      // 400 (150 + 250)
+    int sum3 = sum2 + sum2;     // 800 (400 + 400)
+
+    int difference1 = sum3 - sum2;    // 400 (800 - 400)
+    int product1 = sum1 * sum2;       // 60000 (150 * 400)
+    int quotient1 = sum3 / sum2;      // 2 (800 / 400)
+    int remainder1 = sum3 % sum1;     // 50 (800 / 150)
+
+    System.out.println(sum1);   // Outputs 150
+    System.out.println(sum2);   // Outputs 400
+    System.out.println(sum3);   // Outputs 800
+    System.out.println(difference1);   // Outputs 400
+    System.out.println(product1);   // Outputs 60000
+    System.out.println(quotient1);   // Outputs 2
+    System.out.println(remainder1);   // Outputs 50
+
   }
 }
