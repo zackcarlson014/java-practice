@@ -15,5 +15,15 @@ public class Main {
     int myNum = 15;
     myNum = 20;  // myNum is now 20
     System.out.println(myNum);
+
+    float myFloat = 5.99f;
+    char myChar = 'Z';
+    boolean myBoolean = true;
+    String myString = "Hello";
+
+    System.out.println(myFloat);
+    System.out.println(myChar);
+    System.out.println(myBoolean);
+    System.out.println(myString);
   }
 }
