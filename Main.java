@@ -66,7 +66,7 @@ public class Main {
     System.out.println(myGrade);
 
     /* Alternatively, if you are familiar with ASCII values
-    you can use those to display certain characters: */
+    you can use those to display certain characters */
     char myChar1 = 65, myChar2 = 66, myChar3 = 67;
     System.out.println(myChar1);
     System.out.println(myChar2);
@@ -74,5 +74,21 @@ public class Main {
 
     String greeting = "Hello World";
     System.out.println(greeting);
+
+    /* Widening casting is done automatically when passing
+    a smaller size type to a larger size type */
+    int myWideningInt = 9;
+    double myWideningDouble = myWideningInt; // Automatic casting: int to double
+
+    System.out.println(myWideningInt);      // Outputs 9
+    System.out.println(myWideningDouble);   // Outputs 9.0
+
+    /* Narrowing casting must be done manually by placing
+    the type in parentheses in front of the value */
+    double myNarrowingDouble = 9.78d;
+    int myNarrowingInt = (int) myNarrowingDouble; // Manual casting: double to int
+
+    System.out.println(myNarrowingDouble);   // Outputs 9.78
+    System.out.println(myNarrowingInt);      // Outputs 9
   }
 }
