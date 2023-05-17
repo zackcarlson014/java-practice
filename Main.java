@@ -12,8 +12,8 @@ public class Main {
     String name = "John";
     System.out.println(name);
 
-    int myNum;
-    myNum = 15;
+    int myNum = 15;
+    myNum = 20;  // myNum is now 20
     System.out.println(myNum);
   }
 }
