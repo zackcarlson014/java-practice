@@ -25,5 +25,14 @@ public class Main {
     System.out.println(myChar);
     System.out.println(myBoolean);
     System.out.println(myString);
+
+    String firstName = "Zack ";
+    String lastName = "C";
+    String fullName = firstName + lastName;
+    System.out.println(fullName);
+
+    int x = 5;
+    int y = 6;
+    System.out.println(x + y); // Print the value of x + y
   }
 }
