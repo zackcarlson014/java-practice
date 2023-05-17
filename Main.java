@@ -56,5 +56,10 @@ public class Main {
 
     double myDouble = 19.99d;
     System.out.println(myDouble);
+
+    boolean isJavaFun = true;
+    boolean isLeonardADonkey = false;
+    System.out.println(isJavaFun);     // Outputs true
+    System.out.println(isLeonardADonkey);   // Outputs false
   }
 }
