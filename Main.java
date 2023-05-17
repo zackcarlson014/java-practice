@@ -61,5 +61,18 @@ public class Main {
     boolean isLeonardADonkey = false;
     System.out.println(isJavaFun);     // Outputs true
     System.out.println(isLeonardADonkey);   // Outputs false
+
+    char myGrade = 'Z';
+    System.out.println(myGrade);
+
+    /* Alternatively, if you are familiar with ASCII values
+    you can use those to display certain characters: */
+    char myChar1 = 65, myChar2 = 66, myChar3 = 67;
+    System.out.println(myChar1);
+    System.out.println(myChar2);
+    System.out.println(myChar3);
+
+    String greeting = "Hello World";
+    System.out.println(greeting);
   }
 }
