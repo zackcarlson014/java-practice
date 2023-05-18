@@ -125,5 +125,9 @@ public class Main {
     test3 >>= 3;
     System.out.println(test3);
 
+
+    System.out.println("The length of the txt string is: " + greeting.length());
+    System.out.println(greeting.toUpperCase());   // Outputs "HELLO WORLD"
+    System.out.println(greeting.toLowerCase());   // Outputs "hello world"
   }
 }
