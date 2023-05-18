@@ -178,5 +178,8 @@ public class Main {
       System.out.println("Good evening.");
     }
     // Outputs "Good evening."
+
+    String result = (time < 18) ? "Good day." : "Good evening.";
+    System.out.println(result);
   }
 }
