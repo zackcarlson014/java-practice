@@ -164,5 +164,9 @@ public class Main {
     System.out.println(carriageReturnTxt);
     System.out.println(tabTxt);
     System.out.println(backspaceTxt);
+
+    int myAge = 25;
+    int votingAge = 18;
+    System.out.println(myAge >= votingAge);
   }
 }
