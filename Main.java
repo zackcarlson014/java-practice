@@ -134,5 +134,19 @@ public class Main {
     System.out.println(indexTxt.indexOf("index")); // Outputs 16
 
     System.out.println(firstName.concat(lastName));
+
+    int q = 10;
+    int r = 20;
+    int s = q + r;  // s will be 30 (an integer/number)
+
+    String t = "10";
+    String u = "20";
+    String v = t + u;  // v will be 1020 (a String)
+
+    String w = t + r;  // w will be 1020 (a String)
+
+    System.out.println(s);
+    System.out.println(v);
+    System.out.println(w);
   }
 }
