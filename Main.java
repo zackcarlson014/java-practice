@@ -105,13 +105,13 @@ public class Main {
 
     sum3 |= 3;
 
-    // System.out.println(sum1);   // Outputs 149
-    // System.out.println(sum2);   // Outputs 400
-    // System.out.println(sum3);   // Outputs 801
-    // System.out.println(difference1);   // Outputs 400
-    // System.out.println(product1);   // Outputs 60000
-    // System.out.println(quotient1);   // Outputs 2
-    // System.out.println(remainder1);   // Outputs 50
+    System.out.println(sum1);   // Outputs 149
+    System.out.println(sum2);   // Outputs 400
+    System.out.println(sum3);   // Outputs 801
+    System.out.println(difference1);   // Outputs 400
+    System.out.println(product1);   // Outputs 60000
+    System.out.println(quotient1);   // Outputs 2
+    System.out.println(remainder1);   // Outputs 50
 
     int test1 = 2;
     test1 ^= 3;
@@ -129,5 +129,8 @@ public class Main {
     System.out.println("The length of the txt string is: " + greeting.length());
     System.out.println(greeting.toUpperCase());   // Outputs "HELLO WORLD"
     System.out.println(greeting.toLowerCase());   // Outputs "hello world"
+
+    String indexTxt = "Please find the index where 'index' occurs!";
+    System.out.println(indexTxt.indexOf("index")); // Outputs 16
   }
 }
