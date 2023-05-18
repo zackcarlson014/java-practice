@@ -132,5 +132,7 @@ public class Main {
 
     String indexTxt = "Please find the index where 'index' occurs!";
     System.out.println(indexTxt.indexOf("index")); // Outputs 16
+
+    System.out.println(firstName.concat(lastName));
   }
 }
