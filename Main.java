@@ -148,5 +148,21 @@ public class Main {
     System.out.println(s);
     System.out.println(v);
     System.out.println(w);
+
+    String quoteTxt = "We are the so-called \"Vikings\" from the north.";
+    String apostropheTxt = "It\'s alright.";
+    String backslashTxt = "The character \\ is called backslash.";
+    String newLineTxt = "Hello\nWorld!";
+    String carriageReturnTxt = "Hello\rWorld!";
+    String tabTxt = "Hello\tWorld!";
+    String backspaceTxt = "Hel\blo World!";
+
+    System.out.println(quoteTxt);
+    System.out.println(apostropheTxt);
+    System.out.println(backslashTxt);
+    System.out.println(newLineTxt);
+    System.out.println(carriageReturnTxt);
+    System.out.println(tabTxt);
+    System.out.println(backspaceTxt);
   }
 }
