@@ -100,13 +100,30 @@ public class Main {
     int quotient1 = sum3 / sum2;      // 2 (800 / 400)
     int remainder1 = sum3 % sum1;     // 50 (800 / 150)
 
-    System.out.println(sum1);   // Outputs 150
-    System.out.println(sum2);   // Outputs 400
-    System.out.println(sum3);   // Outputs 800
-    System.out.println(difference1);   // Outputs 400
-    System.out.println(product1);   // Outputs 60000
-    System.out.println(quotient1);   // Outputs 2
-    System.out.println(remainder1);   // Outputs 50
+    ++sum3;
+    --sum1;
+
+    sum3 |= 3;
+
+    // System.out.println(sum1);   // Outputs 149
+    // System.out.println(sum2);   // Outputs 400
+    // System.out.println(sum3);   // Outputs 801
+    // System.out.println(difference1);   // Outputs 400
+    // System.out.println(product1);   // Outputs 60000
+    // System.out.println(quotient1);   // Outputs 2
+    // System.out.println(remainder1);   // Outputs 50
+
+    int test1 = 2;
+    test1 ^= 3;
+    System.out.println(test1);
+
+    int test2 = 2;
+    test2 <<= 3;
+    System.out.println(test2);
+
+    int test3 = 15;
+    test3 >>= 3;
+    System.out.println(test3);
 
   }
 }
