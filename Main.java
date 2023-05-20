@@ -201,5 +201,9 @@ public class Main {
       System.out.println(i);
       i++;
     } while (i < 5);
+
+    for (int h = 0; h <= 10; h += 2) {
+      System.out.println(h);
+    }
   }
 }
