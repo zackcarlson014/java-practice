@@ -235,5 +235,12 @@ public class Main {
         break;
       }
     }
+
+    for (int cf = 0; cf < 10; cf++) {
+      if (cf == 4) {
+        continue;
+      }
+      System.out.println(cf);
+    }
   }
 }
