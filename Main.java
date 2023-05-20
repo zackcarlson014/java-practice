@@ -242,5 +242,15 @@ public class Main {
       }
       System.out.println(cf);
     }
+
+    int cw = 0;
+    while (cw < 10) {
+      if (cw == 4) {
+        cw++;
+        continue;
+      }
+      System.out.println(cw);
+      cw++;
+    }
   }
 }
