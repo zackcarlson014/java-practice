@@ -220,11 +220,20 @@ public class Main {
       System.out.println(car);
     }
 
-    for (int br = 0; br < 10; br++) {
-      if (br == 4) {
+    for (int brf = 0; brf < 10; brf++) {
+      if (brf == 4) {
         break;
       }
-      System.out.println(br);
+      System.out.println(brf);
+    }
+
+    int brw = 0;
+    while (brw < 10) {
+      System.out.println(brw);
+      brw++;
+      if (brw == 4) {
+        break;
+      }
     }
   }
 }
