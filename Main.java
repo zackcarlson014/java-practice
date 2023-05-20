@@ -214,5 +214,10 @@ public class Main {
         System.out.println(" Inner: " + n); // Executes 6 times (2 * 3)
       }
     } 
+
+    String[] cars = {"Ferrari", "Audi", "Land Rover", "Tesla"};
+    for (String car: cars) {
+      System.out.println(car);
+    }
   }
 }
