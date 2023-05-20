@@ -269,5 +269,11 @@ public class Main {
     int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
     myNumbers[1][2] = 9;
     System.out.println(myNumbers[1][2]); // Outputs 9 instead of 7
+
+    for (int arr = 0; arr < myNumbers.length; ++arr) {
+      for(int inarr = 0; inarr < myNumbers[arr].length; ++inarr) {
+        System.out.println(myNumbers[arr][inarr]);
+      }
+    }
   }
 }
