@@ -219,5 +219,12 @@ public class Main {
     for (String car: cars) {
       System.out.println(car);
     }
+
+    for (int br = 0; br < 10; br++) {
+      if (br == 4) {
+        break;
+      }
+      System.out.println(br);
+    }
   }
 }
