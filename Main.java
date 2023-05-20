@@ -205,5 +205,14 @@ public class Main {
     for (int h = 0; h <= 10; h += 2) {
       System.out.println(h);
     }
+
+    for (int m = 1; m <= 2; m++) {
+      System.out.println("Outer: " + m); // Executes 2 times
+      
+      // Inner loop
+      for (int n = 1; n <= 3; n++) {
+        System.out.println(" Inner: " + n); // Executes 6 times (2 * 3)
+      }
+    } 
   }
 }
