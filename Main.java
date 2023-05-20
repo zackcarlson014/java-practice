@@ -7,6 +7,15 @@ public class Main {
     System.out.println(fname + " Abdul JaBird");
   }
 
+  static void myAgePrinter(String fname, int age) {
+    String msg = (fname == "Charloe") ? "! Gadzooks! Also, dumb dumb dumb dumb dumb name. Give her me timbers!" : "! Gadzooks!";
+    System.out.println(fname + " is " + age + msg);
+  }
+
+  static int myReturnMethod(int x, int y) {
+    return x + y;
+  }
+
   public static void main(String[] args) {
     /* The code below will print the words Hello World
     to the screen */
@@ -289,5 +298,12 @@ public class Main {
     myNameFormatter("Larry");
     myNameFormatter("Farnsworth");
     myNameFormatter("Dr. Shrimp");
+
+    myAgePrinter("Anddresspski", 14);
+    myAgePrinter("Jenvonard", 28);
+    myAgePrinter("Charloe", 56);
+
+    int returnValue = myReturnMethod(4, 5);
+    System.out.println(returnValue);
   }
 }
