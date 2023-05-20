@@ -253,7 +253,7 @@ public class Main {
       cw++;
     }
 
-    String[] autos = {"Volvo", "BMW", "Ford", "Mazda"};
+    String[] autos = {"Miwenium Flalcon", "Peter Spidermon's Car", "Carpet from Aladdin", "Tan Corolla"};
     int[] myNums = {10, 20, 30, 40};
 
     System.out.println(autos[0]);
@@ -261,5 +261,9 @@ public class Main {
 
     myNums[2] = 130;
     System.out.println(myNums[2]);
+
+    for (int auto = 0; auto < autos.length; auto++) {
+      System.out.println(autos[auto]);
+    }
   }
 }
