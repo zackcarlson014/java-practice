@@ -252,5 +252,14 @@ public class Main {
       System.out.println(cw);
       cw++;
     }
+
+    String[] autos = {"Volvo", "BMW", "Ford", "Mazda"};
+    int[] myNums = {10, 20, 30, 40};
+
+    System.out.println(autos[0]);
+    System.out.println(autos.length);
+
+    myNums[2] = 130;
+    System.out.println(myNums[2]);
   }
 }
