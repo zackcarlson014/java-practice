@@ -3,6 +3,10 @@ public class Main {
     System.out.println("I just got executed!");
   }
 
+  static void myNameFormatter(String fname) {
+    System.out.println(fname + " Abdul JaBird");
+  }
+
   public static void main(String[] args) {
     /* The code below will print the words Hello World
     to the screen */
@@ -281,5 +285,9 @@ public class Main {
     }
 
     myMethod();
+
+    myNameFormatter("Larry");
+    myNameFormatter("Farnsworth");
+    myNameFormatter("Dr. Shrimp");
   }
 }
