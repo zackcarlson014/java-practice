@@ -333,5 +333,15 @@ public class Main {
     double myDouble1 = plusMethod(4.3, 6.26);
     System.out.println("int: " + myInt1);
     System.out.println("double: " + myDouble1);
+
+    /* Variables declared directly inside a method
+    are available anywherein the method following
+    the line of code in which they were declared */
+
+    // Code here CANNOT use x
+    int sandwich = 100;
+
+    // Code here can use x
+    System.out.println(sandwich);
   }
 }
