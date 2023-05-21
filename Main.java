@@ -29,6 +29,13 @@ public class Main {
 
   }
 
+  static int plusMethod(int x, int y) {
+    return x + y;
+  }
+  
+  static double plusMethod(double x, double y) {
+    return x + y;
+  }
   public static void main(String[] args) {
     /* The code below will print the words Hello World
     to the screen */
@@ -321,5 +328,10 @@ public class Main {
 
     checkAge(20);
     checkAge(14);
+
+    int myInt1 = plusMethod(8, 5);
+    double myDouble1 = plusMethod(4.3, 6.26);
+    System.out.println("int: " + myInt1);
+    System.out.println("double: " + myDouble1);
   }
 }
