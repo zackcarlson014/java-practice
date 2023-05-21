@@ -36,6 +36,15 @@ public class Main {
   static double plusMethod(double x, double y) {
     return x + y;
   }
+
+  public static int sum(int k) {
+    if (k > 0) {
+      return k + sum(k - 1);
+    } else {
+      return 0;
+    }
+  }
+
   public static void main(String[] args) {
     /* The code below will print the words Hello World
     to the screen */
@@ -358,6 +367,9 @@ public class Main {
 
     } // The block ends here
 
-  // Code here CANNOT use x
+    // Code here CANNOT use x
+
+    int sumResult = sum(10);
+    System.out.println(sumResult);
   }
 }
