@@ -45,6 +45,14 @@ public class Main {
     }
   }
 
+  public static int haltSum(int start, int end) {
+    if (end > start) {
+      return end + haltSum(start, end - 1);
+    } else {
+      return end;
+    }
+  }
+
   public static void main(String[] args) {
     /* The code below will print the words Hello World
     to the screen */
@@ -371,5 +379,8 @@ public class Main {
 
     int sumResult = sum(10);
     System.out.println(sumResult);
+
+    int haltSum = haltSum(5, 10);
+    System.out.println(haltSum);
   }
 }
