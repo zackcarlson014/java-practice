@@ -2,6 +2,9 @@ public class Main {
   int x = 5;
   final int finalX = 10;
 
+  int modelYear;
+  String modelName;
+
   String fname = "John";
   String lname = "Doe";
   int age = 24;
@@ -81,8 +84,10 @@ public class Main {
   }
 
   // Create a class constructor for the Main class
-  public Main(int y) {
+  public Main(int y, String name) {
     x = 5;  // Set the initial value for the class attribute x
+    modelYear = y;
+    modelName = name;
   }
   public static void main(String[] args) {
     /* The code below will print the words Hello World
@@ -414,15 +419,15 @@ public class Main {
     int haltSum = haltSum(5, 10);
     System.out.println(haltSum);
 
-    Main myObj = new Main(5);
+    Main myObj = new Main(5, "Mustang");
     myObj.x = 25; // x is now 25
     System.out.println(myObj.x);
 
     // myObj.finalX = 25; // will generate an error: cannot assign a value to a final variable
     System.out.println(myObj.finalX);
 
-    Main myObj1 = new Main(5);  // Object 1
-    Main myObj2 = new Main(5);  // Object 2
+    Main myObj1 = new Main(5, "Rooster");  // Object 1
+    Main myObj2 = new Main(5, "Scooter");  // Object 2
     myObj2.x = 25;
     System.out.println(myObj1.x);  // Outputs 5
     System.out.println(myObj2.x);  // Outputs 25
@@ -435,11 +440,16 @@ public class Main {
 
     myObj.myPublicMethod(); // Call the public method on the object
 
-    Main myCar = new Main(5);   // Create a myCar object
+    Main myCar = new Main(5, "Willy Jean");   // Create a myCar object
     myCar.fullThrottle();      // Call the fullThrottle() method
     myCar.speed(200);    // Call the speed() method
 
-    Main myConstructorObj = new Main(5); // Create an object of class Main (This will call the constructor)
+    Main myConstructorObj = new Main(5, "F. Scott Puertorico"); // Create an object of class Main (This will call the constructor)
     System.out.println(myConstructorObj.x); // Print the value of x
+
+    System.out.println(myCar.modelYear + " " + myCar.modelName);
+    System.out.println(myConstructorObj.modelYear + " " + myConstructorObj.modelName);
+    System.out.println(myObj1.modelYear + " " + myObj1.modelName);
+    System.out.println(myObj2.modelYear + " " + myObj2.modelName);
   }
 }
