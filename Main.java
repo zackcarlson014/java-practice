@@ -6,26 +6,6 @@ public class Main {
   String lname = "Doe";
   int age = 24;
 
-  // Static method
-  static void myStaticMethod() {
-    System.out.println("Static methods can be called without creating objects");
-  }
-
-  // Public method
-  public void myPublicMethod() {
-    System.out.println("Public methods must be called by creating objects");
-  }
-
-  // Create a fullThrottle() method
-  public void fullThrottle() {
-    System.out.println("The car is going as fast as it can!");
-  }
-
-  // Create a speed() method and add a parameter
-  public void speed(int maxSpeed) {
-    System.out.println("Max speed is: " + maxSpeed);
-  }
-
   static void myMethod() {
     System.out.println("I just got executed!");
   }
@@ -80,6 +60,30 @@ public class Main {
     }
   }
 
+  // Static method
+  static void myStaticMethod() {
+    System.out.println("Static methods can be called without creating objects");
+  }
+
+  // Public method
+  public void myPublicMethod() {
+    System.out.println("Public methods must be called by creating objects");
+  }
+
+  // Create a fullThrottle() method
+  public void fullThrottle() {
+    System.out.println("The car is going as fast as it can!");
+  }
+
+  // Create a speed() method and add a parameter
+  public void speed(int maxSpeed) {
+    System.out.println("Max speed is: " + maxSpeed);
+  }
+
+  // Create a class constructor for the Main class
+  public Main() {
+    x = 5;  // Set the initial value for the class attribute x
+  }
   public static void main(String[] args) {
     /* The code below will print the words Hello World
     to the screen */
@@ -433,6 +437,9 @@ public class Main {
 
     Main myCar = new Main();   // Create a myCar object
     myCar.fullThrottle();      // Call the fullThrottle() method
-    myCar.speed(200);          // Call the speed() method
+    myCar.speed(200);    // Call the speed() method
+
+    Main myConstructorObj = new Main(); // Create an object of class Main (This will call the constructor)
+    System.out.println(myConstructorObj.x); // Print the value of x
   }
 }
