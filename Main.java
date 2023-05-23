@@ -426,8 +426,8 @@ public class Main {
     // myObj.finalX = 25; // will generate an error: cannot assign a value to a final variable
     System.out.println(myObj.finalX);
 
-    Main myObj1 = new Main(5, "Rooster");  // Object 1
-    Main myObj2 = new Main(5, "Scooter");  // Object 2
+    Main myObj1 = new Main(5, "Snackzilla");  // Object 1
+    Main myObj2 = new Main(5, "The DeLuca Boy");  // Object 2
     myObj2.x = 25;
     System.out.println(myObj1.x);  // Outputs 5
     System.out.println(myObj2.x);  // Outputs 25
