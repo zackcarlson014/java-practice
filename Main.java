@@ -6,6 +6,15 @@ public class Main {
   String lname = "Doe";
   int age = 24;
 
+  // Static method
+  static void myStaticMethod() {
+    System.out.println("Static methods can be called without creating objects");
+  }
+
+  // Public method
+  public void myPublicMethod() {
+    System.out.println("Public methods must be called by creating objects");
+  }
 
   static void myMethod() {
     System.out.println("I just got executed!");
@@ -406,5 +415,10 @@ public class Main {
 
     System.out.println("Name: " + myObj.fname + " " + myObj.lname);
     System.out.println("Age: " + myObj.age);
+
+    myStaticMethod(); // Call the static method
+    // myPublicMethod(); This would compile an error
+
+    myObj.myPublicMethod(); // Call the public method on the object
   }
 }
