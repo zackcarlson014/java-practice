@@ -16,6 +16,16 @@ public class Main {
     System.out.println("Public methods must be called by creating objects");
   }
 
+  // Create a fullThrottle() method
+  public void fullThrottle() {
+    System.out.println("The car is going as fast as it can!");
+  }
+
+  // Create a speed() method and add a parameter
+  public void speed(int maxSpeed) {
+    System.out.println("Max speed is: " + maxSpeed);
+  }
+
   static void myMethod() {
     System.out.println("I just got executed!");
   }
@@ -420,5 +430,9 @@ public class Main {
     // myPublicMethod(); This would compile an error
 
     myObj.myPublicMethod(); // Call the public method on the object
+
+    Main myCar = new Main();   // Create a myCar object
+    myCar.fullThrottle();      // Call the fullThrottle() method
+    myCar.speed(200);          // Call the speed() method
   }
 }
