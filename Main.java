@@ -451,5 +451,9 @@ public class Main {
     System.out.println(myConstructorObj.modelYear + " " + myConstructorObj.modelName);
     System.out.println(myObj1.modelYear + " " + myObj1.modelName);
     System.out.println(myObj2.modelYear + " " + myObj2.modelName);
+
+    Second mySecond = new Second();
+    // System.out.println(mySecond.privateAge);  // The field Second.privateAge is not visable
+    System.out.println(mySecond.publicAge);
   }
 }
