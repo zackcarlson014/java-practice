@@ -9,6 +9,16 @@ public class Main {
   String lname = "Doe";
   int age = 24;
 
+  // Getter
+  public String getFname() {
+    return fname;
+  }
+
+  // Setter
+  public void setFname(String newFname) {
+    this.fname = newFname;
+  }
+
   static void myMethod() {
     System.out.println("I just got executed!");
   }
@@ -455,5 +465,9 @@ public class Main {
     Second mySecond = new Second();
     // System.out.println(mySecond.privateAge);  // The field Second.privateAge is not visable
     System.out.println(mySecond.publicAge);
+
+
+    myObj.fname = "Willy";
+    System.out.println(myObj.fname);
   }
 }
