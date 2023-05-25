@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
   int x = 5;
   final int finalX = 10;
@@ -468,11 +469,17 @@ public class Main {
     // System.out.println(mySecond.privateAge);  // The field Second.privateAge is not visable
     System.out.println(mySecond.publicAge);
 
-
     myObj.fname = "Willy";
     System.out.println(myObj.fname);
 
     myObj.setFname("Wolfman"); // Set the value of the name variable to "John"
     System.out.println(myObj.getFname());
+
+    try (Scanner myScanner = new Scanner(System.in)) {
+      System.out.println("Enter username");
+
+      String userName = myScanner.nextLine();
+      System.out.println("Username is: " + userName);
+    }
   }
 }
