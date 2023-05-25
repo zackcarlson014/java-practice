@@ -481,5 +481,13 @@ public class Main {
       String userName = myScanner.nextLine();
       System.out.println("Username is: " + userName);
     }
+
+    Animal myAnimal = new Animal();  // Create a Animal object
+    Animal myPig = new Pig();  // Create a Pig object
+    Animal myDog = new Dog();  // Create a Dog object
+
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
   }
 }
