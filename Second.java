@@ -11,5 +11,12 @@ class Second {
     myCar.speed(200);          // Call the speed() method
 
     System.out.println(mySecond.privateAge);
+
+    Student myStudent = new Student();
+
+    System.out.println("Name: " + myStudent.fname);
+    System.out.println("Age: " + myStudent.age);
+    System.out.println("Graduation Year: " + myStudent.graduationYear);
+    myStudent.study(); // call abstract method
   }
 }
