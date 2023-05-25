@@ -9,14 +9,16 @@ public class Main {
   String lname = "Doe";
   int age = 24;
 
+  private String privateFname = "Jack";
+
   // Getter
   public String getFname() {
-    return fname;
+    return privateFname;
   }
 
   // Setter
   public void setFname(String newFname) {
-    this.fname = newFname;
+    this.privateFname = newFname;
   }
 
   static void myMethod() {
@@ -469,5 +471,8 @@ public class Main {
 
     myObj.fname = "Willy";
     System.out.println(myObj.fname);
+
+    myObj.setFname("Wolfman"); // Set the value of the name variable to "John"
+    System.out.println(myObj.getFname());
   }
 }
