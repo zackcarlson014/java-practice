@@ -1,4 +1,12 @@
 import java.util.*;
+
+class OuterClass {
+  int x = 10;
+
+  class InnerClass {
+    int y = 5;
+  }
+}
 public class Main {
   int x = 5;
   final int finalX = 10;
@@ -489,5 +497,9 @@ public class Main {
     myAnimal.animalSound();
     myPig.animalSound();
     myDog.animalSound();
+
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.y + myOuter.x);
   }
 }
