@@ -6,6 +6,10 @@ class OuterClass {
   class InnerClass {
     int y = 5;
   }
+
+  private class PrivateInnerClass {
+    int z = 5;
+  }
 }
 public class Main {
   int x = 5;
@@ -501,5 +505,8 @@ public class Main {
     OuterClass myOuter = new OuterClass();
     OuterClass.InnerClass myInner = myOuter.new InnerClass();
     System.out.println(myInner.y + myOuter.x);
+
+    // OuterClass.PrivateInnerClass myPrivateInner = myOuter.new PrivateInnerClass();
+    // System.out.println(myPrivateInner.z + myOuter.x);
   }
 }
