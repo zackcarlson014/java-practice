@@ -5,6 +5,9 @@ class OuterClass {
 
   class InnerClass {
     int y = 5;
+    public int myInnerMethod() {
+      return x;
+    }
   }
 
   private class PrivateInnerClass {
@@ -515,5 +518,7 @@ public class Main {
 
     OuterClass.StaticInnerClass myStaticInner = new OuterClass.StaticInnerClass();
     System.out.println(myStaticInner.y + myOuter.x);
+
+    System.out.println(myInner.myInnerMethod());
   }
 }
