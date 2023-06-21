@@ -10,6 +10,10 @@ class OuterClass {
   private class PrivateInnerClass {
     int z = 5;
   }
+
+  static class StaticInnerClass {
+    int y = 5;
+  }
 }
 public class Main {
   int x = 5;
@@ -508,5 +512,8 @@ public class Main {
 
     // OuterClass.PrivateInnerClass myPrivateInner = myOuter.new PrivateInnerClass();
     // System.out.println(myPrivateInner.z + myOuter.x);
+
+    OuterClass.StaticInnerClass myStaticInner = new OuterClass.StaticInnerClass();
+    System.out.println(myStaticInner.y + myOuter.x);
   }
 }
