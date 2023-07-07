@@ -524,5 +524,9 @@ public class Main {
     PigAbstract myPigAbstract = new PigAbstract(); // Create a Pig object
     myPigAbstract.animalSound();
     myPigAbstract.sleep();
+
+    Pig_AnimalInterface myPig_AnimalInterface = new Pig_AnimalInterface();  // Create a Pig object
+    myPig_AnimalInterface.animalSound();
+    myPig_AnimalInterface.sleep();
   }
 }
