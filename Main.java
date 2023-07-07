@@ -528,5 +528,9 @@ public class Main {
     Pig_AnimalInterface myPig_AnimalInterface = new Pig_AnimalInterface();  // Create a Pig object
     myPig_AnimalInterface.animalSound();
     myPig_AnimalInterface.sleep();
+
+    DemoClass myDemoObj = new DemoClass();
+    myDemoObj.myMethod();
+    myDemoObj.myOtherMethod();
   }
 }
