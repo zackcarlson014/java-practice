@@ -19,6 +19,12 @@ class OuterClass {
   }
 }
 public class Main {
+  enum Level {
+    LOW,
+    MEDIUM,
+    HIGH,
+  }
+
   int x = 5;
   final int finalX = 10;
 
@@ -532,5 +538,12 @@ public class Main {
     DemoClass myDemoObj = new DemoClass();
     myDemoObj.myMethod();
     myDemoObj.myOtherMethod();
+
+    Level myLowVar = Level.LOW; 
+    Level myMediumVar = Level.MEDIUM; 
+    Level myHighVar = Level.HIGH; 
+    System.out.println(myLowVar);
+    System.out.println(myMediumVar);
+    System.out.println(myHighVar);
   }
 }
