@@ -520,5 +520,9 @@ public class Main {
     System.out.println(myStaticInner.y + myOuter.x);
 
     System.out.println(myInner.myInnerMethod());
+
+    PigAbstract myPigAbstract = new PigAbstract(); // Create a Pig object
+    myPigAbstract.animalSound();
+    myPigAbstract.sleep();
   }
 }
